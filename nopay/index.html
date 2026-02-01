@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" id="theme" href="style.css" href="style-alt.css">
+
+
+<script>
+
+
+function showall() {
+document.getElementById("gensiteutil").style.display = "block";
+document.getElementById("gamespc").style.display = "block";
+document.getElementById("romsites").style.display = "block";
+document.getElementById("paywalledmedia").style.display = "block";
+document.getElementById("softsites").style.display = "block";
+document.getElementById("emulators").style.display = "block";
+
+}
+
+function hideall() {
+document.getElementById("gensiteutil").style.display = "none";
+document.getElementById("gamespc").style.display = "none";
+document.getElementById("romsites").style.display = "none";
+document.getElementById("paywalledmedia").style.display = "none";
+document.getElementById("softsites").style.display = "none";
+document.getElementById("emulators").style.display = "none";
+
+}
+
+function showgensiteutil () {
+hideall();
+document.getElementById("gensiteutil").style.display = "block";
+document.getElementById("goback").style.display = "block";
+document.getElementById("cat").style.display = "none";
+
+
+}
+function showgamespc () {
+hideall();
+document.getElementById("gamespc").style.display = "block";
+document.getElementById("goback").style.display = "block";
+document.getElementById("cat").style.display = "none";
+}
+function showromsites () {
+hideall();
+document.getElementById("romsites").style.display = "block";
+document.getElementById("goback").style.display = "block";
+document.getElementById("cat").style.display = "none";
+
+}
+function showpaywalledmedia () {
+hideall();
+document.getElementById("paywalledmedia").style.display = "block";
+document.getElementById("goback").style.display = "block";
+document.getElementById("cat").style.display = "none";
+
+}
+
+function showsoftsites () {
+hideall();
+document.getElementById("softsites").style.display = "block";
+document.getElementById("goback").style.display = "block";
+document.getElementById("cat").style.display = "none";
+
+}
+
+function showemulators() {
+hideall();
+document.getElementById("emulators").style.display = "block";
+document.getElementById("goback").style.display = "block";
+document.getElementById("cat").style.display = "none";
+
+}
+
+function YeahYeahOkayBuddyWeGetIt () {
+document.getElementById("cat").style.display = "block";
+document.getElementById("warn").style.display = "none";
+localStorage.setItem('warned', 1);
+}
+
+function getOutOfLondon() {
+    hideall();
+    document.getElementById("cat").style.display = "block";
+    document.getElementById("goback").style.display = "none";
+
+}
+
+function disableanimations() {
+
+let theme = document.getElementById('theme');
+theme.setAttribute('href', 'style-alt.css');
+document.getElementById("disableit").style.display = "none";
+document.getElementById("enableit").style.display = "block";
+localStorage.setItem('themeset', 2);
+localStorage.getItem("themeset");
+const themeset = localStorage.getItem("themeset");
+console.log(themeset);
+
+}
+
+function enableanimations() {
+let theme = document.getElementById('theme');
+theme.setAttribute('href', 'style.css');
+document.getElementById("disableit").style.display = "block";
+document.getElementById("enableit").style.display = "none";
+localStorage.setItem('themeset', 1);
+const themeset = localStorage.getItem("themeset");
+console.log(themeset);
+}
+
+function enableporn() {
+document.getElementById("enableporn").style.display = "none";
+document.getElementById("disableporn").style.display = "block";
+document.getElementById("adult1").style.display = "block";
+document.getElementById("adult2").style.display = "block";
+console.log("enabling porn");
+localStorage.setItem('porn', 1);
+localStorage.getItem('porn');
+const porn = localStorage.getItem('porn');
+console.log(porn);
+}
+
+function disableporn() {
+document.getElementById("disableporn").style.display = "none";
+document.getElementById("enableporn").style.display = "block";
+document.getElementById("adult1").style.display = "none";
+document.getElementById("adult2").style.display = "none";
+console.log("disabling porn");
+localStorage.setItem('porn', 0);
+const porn = localStorage.getItem('porn');
+console.log(porn);
+}
+
+
+
+</script>
+
+
+<head>
+
+<meta property="og:site_name" content="TechCat.Dev">
+<meta property="og:description" content="NoPay - Piracy Guides">
+
+<!-- animated bg created here: https://wweb.dev/resources/animated-css-background-generator -->
+<div class="background" id="background">
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+   <span></span>
+</div>
+
+<title>NoPay</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo+One">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo+Black">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Russo+One">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Archivo+Black">
+</head>
+
+
+
+<div class="warn" id="warn">
+<div class="links border-25">
+<div class="squishh">
+<p>WARNING!: NOT ALL SITES HERE ARE GUARANTEED TO BE SAFE, OR MALWARE FREE. YOU ARE RESPONSIBLE FOR ANYTHING YOU DO WITH YOUR OWN HARDWARE AND OR SOFTWARE.</p>
+<p>NONE OF THE SITES LISTED ARE IN ANY WAY MANAGED OR OWNED BY THE CREATOR OF THIS SITE. NO COPYRIGHTED MATERIAL IS DISTRIBUTED ON THIS PAGE. THIS IS JUST FOR INFORMATIONAL PURPOSES.</p>
+<p>Please be aware that some of the sites listed here may contain advertisements that contain malware, pornographic material, or are generally misleading. Viewer discretion is advised. Sites labled (18+) are to only be viewed by adults.</p>
+<p>TLDR: Don't sue me if you do something stupid.</p>
+<hr>
+<h2><i>If you like it, BUY IT!</i></h2>
+</div>
+</div>
+<br>
+<div class="links border-25">
+<br><button onclick="YeahYeahOkayBuddyWeGetIt()">I Understand.</button><br><br>
+</div>
+</div>
+
+
+<div class="cat" id="cat">
+
+<div class="links border-25">
+<h1>&#128008; NoPay - By TechCat &#128008;</h1>
+<p>Last updated: Jan 6th, 2026.</p>
+</div>
+<br>
+
+<div class="links border-25">
+<h1>Categories:</h1>
+<a href="#" onclick="showgensiteutil()">GENERAL SITES/UTILITIES</a><br><br>
+<a href="#" onclick="showgamespc()">GAMES (PC)</a><br><br>
+<a href="#" onclick="showsoftsites()">SOFTWARE (PC/Mac)</a><br><br>
+<a href="#" onclick="showemulators()">EMULATORS</a><br><br>
+
+<a href="#" onclick="showromsites()">ROM SITES</a><br><br>
+<a href="#" onclick="showpaywalledmedia()">PAYWALLED MEDIA</a><br><br>
+<!--<a href="#" onclick="showall()">Show all *debug*</a><br>
+<a href="#" onclick="hideall()">Hide all *debug*</a><br> -->
+<!-- if you enable this, you're a fucking retard and i hate you.-->
+<hr>
+<h1>Site Settings:</h1>
+
+<div id="disableit"><a href="#" onclick="disableanimations()">Disable Animations & Effects</a><br><br></div>
+<div id="enableit" class="enableitt"><a href="#" onclick="enableanimations()">Enable Animations & Effects</a><br><br></div>
+
+<div id="enableporn"><a href="#" onclick="enableporn()">Enable 18+ Content</a><br><br></div>
+<div id="disableporn" class="disabbleporn"><a href="#" onclick="disableporn()">Disable 18+ Content</a><br><br></div>
+
+
+</div>
+</div>
+<br>
+</div>
+
+<div class="gensiteutil" id="gensiteutil">
+<div class="links border-25">
+<h1>GENERAL SITES/UTILITIES:</h1>
+</div>
+<br>
+<div class="links border-25">
+<h3>Torrent Sites:</h3>
+<hr>
+<h3>1337x And Its <i>OFFICIAL</i> (Working) Mirrors:</h3>
+<a href="https://1337x.to">1337x.to</a>
+<br><br>
+<a href="https://1337x.st">1337x.st</a>
+<br><br>
+<a href="https://x1337x.cc">x1337x.cc</a>
+<br><br>
+<a href="https://x1337x.eu">x1337x.eu</a>
+<br><br>
+<hr>
+<h3>The Pirate Bay:</h3>
+<a href="https://thepiratebay.org/index.html">thepiratebay.org</a>
+<br><br>
+<hr>
+<h3>RuTracker:</h3>
+<a href="https://rutracker.org/">rutracker.org</a>
+<h5>(Russian site, requires registration for most features.)</h5>
+<hr>
+</div>
+<br>
+<div class="links border-25">
+<h3>Torrent Clients:</h3>
+<hr>
+<h3>QBittorrent:</h3>
+<a href="https://www.qbittorrent.org/">www.qbittorrent.org</a>
+<br><br>
+<hr>
+<h3>Deluge:</h3>
+<a href="https://deluge-torrent.org/">deluge-torrent.org</a>
+<br><br>
+<hr>
+<h3>Free Download Manager:</h3>
+<a href="https://www.freedownloadmanager.org/">www.freedownloadmanager.org</a>
+<br><br>
+<hr>
+</div>
+<br>
+<div class="links border-25">
+<h3>Advertisement Blockers:</h3>
+<hr>
+<h3>uBlock Origin (Chrome):</h3>
+<a href="https://chromewebstore.google.com/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en">uBlock Origin - Chrome</a>
+<br><br>
+<hr>
+<h3>uBlock Origin Lite (Chrome):</h3>
+<a href="https://chromewebstore.google.com/detail/ublock-origin-lite/ddkjiahejlhfcafbddmgiahcphecmpfh?hl=en">uBlock Origin Lite - Chrome</a>
+<br><br>
+<hr>
+<h3>uBlock Origin (Firefox):</h3>
+<a href="https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/">uBlock Origin - Firefox</a>
+<br><br>
+<hr>
+<h3>Brave Browser (Windows, Linux, Mac, iOS, Android):</h3>
+<a href="https://brave.com/">Brave Browser</a>
+<br><br>
+<hr>
+<h3>Supermium (Manifest V2 Compatible Chrome Fork):</h3>
+<a href="https://github.com/win32ss/supermium">Supermium - Github</a>
+<br><br>
+<hr>
+</div>
+<br>
+<div class="links border-25">
+<h3>VPNs:</h3>
+<hr>
+<h3>ProtonVPN:</h3>
+<a href="https://protonvpn.com/free-vpn">protonvpn.com</a>
+<h5>(Free tier does NOT support torrenting.)</h5>
+<hr>
+<h3>Mullvad VPN:</h3>
+<a href="https://mullvad.net/en">mullvad.net</a>
+<h5>(Paid tiers only. Highly recommended for bypassing internet censorship.)</h5>
+<hr>
+</div>
+<br>
+
+<div class="links border-25">
+<h3>Self-Hosted Stuff:</h3>
+<hr>
+<h3>KiwiX (Self-Hosted Wikipedia):</h3>
+<a href="https://kiwix.org">kiwix.org</a>
+<br><br>
+<hr>
+<h3>PiVPN (Self-Hosted VPN):</h3>
+<a href="https://pivpn.io">pivpn.io</a>
+<br><br>
+<hr>
+<h3>YaCy (Self-Hosted Search Engine):</h3>
+<a href="https://yacy.net/">yacy.net</a>
+<br><br>
+<hr>
+<h3>Jellyfin (Self-Hosted Media Server):</h3>
+<a href="https://jellyfin.org/">jellyfin.org</a>
+<br><br>
+<hr>
+<h3>Ollama (Self-Hosted AI Chatbots):</h3>
+<a href="https://ollama.com/">ollama.com</a>
+<br><br>
+<hr>
+<h3>Stable Diffusion WebUI (Self-Hosted AI Inage Generator):</h3>
+<a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui">Stable Diffusion WebUI - Github</a>
+<br><br>
+<hr>
+<h3>Waifu2x Unlimited (Self-Hosted Local Image Upscaler):</h3>
+<a href="https://github.com/nagadomi/nunif/tree/master/waifu2x/unlimited_waifu2x">Waifu2x Unlimited - Github</a>
+<br><br>
+<hr>
+<h3>Mazanoke (Self-Hosted Local Image Compressor And Converter):</h3>
+<a href="https://github.com/civilblur/mazanoke">Mazanoke - Github</a>
+<br><br>
+<hr>
+</div>
+<br>
+<div class="links border-25">
+<h3>Paywall Bypassers (for News Sites, Blogs, Etc.):</h3>
+<hr>
+<h3>Archive.today:</h3>
+<a href="https://archive.ph/">archive.ph</a>
+<br><br>
+<a href="https://archive.md/">archive.md</a>
+<br><br>
+<hr>
+</div>
+
+<br>
+
+<div class="links border-25">
+<h3>Translators:</h3>
+<hr>
+<h3>TWP Translate (Firefox Extension):</h3>
+<a href="https://addons.mozilla.org/en-US/firefox/addon/traduzir-paginas-web/">TWP - Firefox Addons</a>
+<br><br>
+<hr>
+<h3>Google Translate:</h3>
+<a href="https://translate.google.com/">translate.google.com</a>
+<br><br>
+<hr>
+<h3>Yandex Translate:</h3>
+<a href="https://translate.yandex.com/en/">translate.yandex.com/en/</a>
+<br><br>
+<hr>
+</div>
+<br>
+<div class="links border-25">
+
+<h3>ROM Patchers:</h3>
+<hr>
+<h3>Marcrobledo - RomPatcher.js</h3>
+<a href="https://www.marcrobledo.com/RomPatcher.js/">marcrobledo.com/RomPatcher.js</a>
+<br><br>
+<hr>
+</div>
+
+</div>
+
+<div class="gamespc" id="gamespc">
+<div class="links border-25">
+<h1>GAMES (PC):</h1>
+</div>
+
+<br>
+<div class="links border-25">
+<h3>Direct Download Sites for Games:</h3>
+<hr>
+<h3>SteamRip:</h3>
+<a href="https://steamrip.com/">steamrip.com</a>
+<br><br>
+<hr>
+<h3>SteamUnlocked:</h3>
+<a href="https://steamunlocked.net/">steamunlocked.net</a>
+<br><br>
+<hr>
+<h3>IGGGAMES:</h3>
+<a href="https://igg-games.com/">igg-games.com</a>
+<br><br>
+<hr>
+</div>
+<br>
+<div class="links border-25">
+<h3>Repack Sites:</h3>
+<hr>
+<h3>DODI Repacks:</h3>
+<a href="https://dodi-repacks.site/">dodi-repacks.site</a>
+<br><br>
+<hr>
+<h3>Fitgirl Repacks:</h3>
+<a href="https://fitgirl-repacks.site/">fitgirl-repacks.site</a>
+<br><br>
+<hr>
+</div>
+<br>
+
+<div class="links border-25">
+<h3>Cracked Minecraft Launchers:</h3>
+<hr>
+<h3>UltimMC (MultiMC Fork):</h3>
+<a href="https://github.com/UltimMC/Launcher">UltimMC - Github</a>
+<br><br>
+<hr>
+<h3>Prism Launcher Cracked (Prism Launcher/MultiMC Fork):</h3>
+<a href="https://github.com/Diegiwg/PrismLauncher-Cracked">PrismLauncher-Cracked - Github</a>
+<br><br>
+<hr>
+</div>
+
+<div id="adult1" class="adultflag1">
+<br>
+<div class="links border-25">
+<h3>Adult Games (18+):</h3>
+<hr>
+<h3>F95zone:</h3>
+<a href="https://f95zone.to/">f95zone.to</a>
+<h5>(Requires registration for most features.)</h5>
+<hr>
+</div>
+</div>
+</div>
+
+<div class="romsites" id="romsites">
+<div class="links border-25">
+<h1>ROM SITES:</h1>
+</div>
+<br>
+<div class="links border-25">
+<h3>Switch, Wii U, Wii, 3DS, PSVITA:</h3>
+<hr>
+<h3>Ziperto:</h3>
+<a href="https://www.ziperto.com">ziperto.com</a>
+<br><br>
+<hr>
+</div>
+<br>
+
+<div class="links border-25">
+<h3>Switch:</h3>
+<hr>
+<h3>NXbrew:</h3>
+<a href="https://nxbrew.net">nxbrew.net</a>
+<br><br>
+<hr>
+<h3>RomsLab:</h3>
+<a href="https://romslab.com/">romslab.com</a>
+<br><br>
+<hr>
+</div>
+<br>
+
+<div class="links border-25">
+<h3>Legacy Consoles:</h3>
+<hr>
+<h3>WowROMS:</h3>
+<a href="https://wowroms.com/">wowroms.com</a>
+<br><br>
+<hr>
+<h3>Myrient:</h3>
+<a href="https://myrient.erista.me/">myrient.erista.me</a>
+<br><br>
+<hr>
+</div>
+<br>
+<div class="links border-25">
+<h3>Switch Keys/Firmware:</h3>
+<hr>
+<h3>Rentry:</h3>
+<a href="https://rentry.org/128bbkeys">rentry.org/128bbkeys</a>
+<br><br>
+<hr>
+</div>
+<br>
+<div class="links border-25">
+<h3>Cemu Keys:</h3>
+<hr>
+<h3>Pastebin:</h3>
+<a href="https://pastebin.com/w6GxMMNX">pastebin.com/w6GxMMNX</a>
+<br><br>
+<hr>
+</div>
+<br>
+
+<div class="links border-25">
+<h3>VITA, PSM, PSP, PSX, PS3:</h3>
+<hr>
+<h3>NoPayStation:</h3>
+<a href="https://www.nopaystation.com">nopaystation.com</a>
+<br><br>
+<hr>
+</div>
+
+<br>
+<div class="links border-25">
+<h3>Rom Hacks, Translations, More Obscure Titles:</h3>
+<hr>
+<h3>RetroGameTalk - Repository:</h3>
+<a href="https://retrogametalk.com/repository/">retrogametalk.com/repository</a>
+<h5>(Registration is REQUIRED for downloading. Site was previously known as cdromance.org)</h5>
+<hr>
+</div>
+
+</div>
+
+<div class="paywalledmedia" id="paywalledmedia">
+<div class="links border-25">
+<h1>PAYWALLED MEDIA:</h1>
+</div>
+<br>
+<div class="links border-25">
+<h3>Patreon/Pixiv Fanbox/Discord/Fantia/Afdian/Boosty/Gumroad/SubscribeStar/DLsite:</h3>
+<hr>
+<h3>Kemono.cr:</h3>
+<a href="https://kemono.cr">kemono.cr</a>
+<h5>(May contain 18+ content. Recently changed from .su to .cr TLD.)</h5>
+<hr>
+</div>
+
+<div class="adultflag2" id="adult2">
+<br>
+<div class="links border-25">
+<h3>OnlyFans/Fansly/CandFans (18+):</h3>
+<hr>
+<h3>Coomer.st:</h3>
+<a href="https://coomer.st">coomer.st</a>
+<h5>(Recently changed from .su to .st TLD.)</h5>
+<hr>
+</div>
+</div>
+
+<br>
+<div class="links border-25">
+<h3>TV Shows/Movies:</h3>
+<hr>
+<h3>Goku.sx:</h3>
+<a href="http://goku.sx/">goku.sx</a>
+<br><br>
+<hr>
+</div>
+<br>
+<div class="links border-25">
+<h3>Anime:</h3>
+<hr>
+<h3>Anicrush.to:</h3>
+<a href="https://anicrush.to">anicrush.to</a>
+<br><br>
+<hr>
+<h3>Hianime.to:</h3>
+<a href="https://hianime.to/">hianime.to</a>
+<br><br>
+<hr>
+</div>
+
+</div>
+
+<div class="softsites" id="softsites">
+<div class="links border-25">
+<h1>SOFTWARE (PC/Mac):</h1>
+</div>
+<br>
+
+<div class="links border-25">
+<h3>Adobe Products:</h3>
+<hr>
+<h3>Monkrus:</h3>
+<a href="https://vk.com/monkrus">vk.com/monkrus</a>
+<h5>(Russian site.)</h5>
+<hr>
+</div>
+
+<br>
+
+<div class="links border-25">
+<h3>Microsoft Windows & Office Activators/Downloads:</h3>
+<hr>
+<h3>MassGrave:</h3>
+<a href="https://massgrave.dev/">massgrave.dev</a>
+<br><br>
+<hr>
+<h3>BobPony:</h3>
+<a href="https://bobpony.com/">bobpony.com</a>
+<br><br>
+<hr>
+</div>
+
+<br>
+
+<div class="links border-25">
+<h3>Mac OS ISOs/Installers:</h3>
+<hr>
+<h3>Mac OS ISO Torrents:</h3>
+<a href="https://github.com/Pyenb/macOS-ISOs">macOS-ISOs - Github</a>
+<br><br>
+<hr>
+<h3>OpenCore Legacy Patcher:</h3>
+<a href="https://dortania.github.io/OpenCore-Legacy-Patcher/INSTALLER.html#downloading-the-installer">OpenCore Legacy Patcher - Making The Installer</a>
+<br><br>
+<hr>
+<h3>GibMacOS:</h3>
+<a href="https://github.com/corpnewt/gibMacOS">gibMacOS - Github</a>
+<br><br>
+<hr>
+</div>
+</div>
+
+<div class="emulators" id="emulators">
+<div class="links border-25">
+<h1>EMULATORS:</h1>
+</div>
+
+<br>
+
+<div class="links border-25">
+<h3>Switch Emulators:</h3>
+<hr>
+<h3>Eden (Yuzu Fork):</h3>
+<a href="https://eden-emu.dev/">eden-emu.dev</a>
+<h5>(This one is actively maintained!)</h5>
+<hr>
+<h3>Sudachi (Yuzu Fork):</h3>
+<a href="https://github.com/emuplace/sudachi.emuplace.app/releases">Sudachi - Github</a>
+<br><br>
+<hr>
+<h3>Suyu (Yuzu Fork):</h3>
+<a href="https://suyu.dev/">suyu.dev</a>
+<br><br>
+<hr>
+<h3>Ryujinx (Archive):</h3>
+<a href="https://archive.org/details/ryujinx-1.1.1403_final">Ryujinx - Archive.org</a>
+<br><br>
+<hr>
+<h3>Yuzu (Archive):</h3>
+<a href="https://archive.org/details/yuzu_emulator_builds">Yuzu - Archive.org</a>
+<br><br>
+<hr>
+</div>
+
+<br>
+
+<div class="links border-25">
+<h3>3DS Emulators:</h3>
+<hr>
+<h3>Azahar (Citra Fork):</h3>
+<a href="https://github.com/azahar-emu/azahar">Azahar - Github</a>
+<br><br>
+<hr>
+<h3>Azahar Plus (Azahar/Citra Fork):</h3>
+<a href="https://github.com/AzaharPlus/AzaharPlus">Azahar Plus - Github (Not affiliated with PabloMK7)</a>
+<h5>(Forked emulator which restores some removed features because of legal concerns.)</h5>
+<h5>(<i>Warning!</i> The original developer of Azahar openly discourages the use of Azahar Plus. <i>Use this emulator at your own risk!</i>)</h5>
+<hr>
+<h3>Lime3DS (Archive):</h3>
+<a href="https://web.archive.org/web/20250104042412/https://github.com/Lime3DS/lime3ds-archive/releases">Lime3DS - Archive.org</a>
+<br><br>
+<hr>
+<h3>Panda3DS:</h3>
+<a href="https://github.com/wheremyfoodat/Panda3DS">Panda3DS - Github</a>
+<br><br>
+<hr>
+<h3>Citra (Archive):</h3>
+<a href="https://archive.org/details/citra-nightly-2104_20240304">Citra - Archive.org</a>
+<br><br>
+<hr>
+</div>
+<br>
+
+<div class="links border-25">
+<h3>DS Emulators:</h3>
+<hr>
+<h3>MelonDS:</h3>
+<a href="https://melonds.kuribo64.net/">melonds.kuribo64.net</a>
+<br><br>
+<hr>
+<h3>DeSmuME:</h3>
+<a href="https://desmume.org/">desmume.org</a>
+<br><br>
+<hr>
+<h3>NO$GBA:</h3>
+<a href="https://www.nogba.com/no$gba-download.htm">nogba.com</a>
+<h5>(Also emulates GBA games.)</h5>
+<hr>
+</div>
+
+<br>
+
+<div class="links border-25">
+<h3>GBA Emulators:</h3>
+<hr>
+<h3>NanoBoyAdvance:</h3>
+<a href="https://github.com/nba-emu/NanoBoyAdvance">Github - NanoBoyAdvance</a>
+<br><br>
+<hr>
+<h3>mGBA:</h3>
+<a href="https://mgba.io/">mgba.io</a>
+<br><br>
+<hr>
+<h3>NO$GBA:</h3>
+<a href="https://www.nogba.com/no$gba-download.htm">nogba.com</a>
+<h5>(Also emulates DS games.)</h5>
+<hr>
+</div>
+
+
+<br>
+<div class="links border-25">
+<h3>Multi-System Emulators:</h3>
+<hr>
+<h3>RetroArch:</h3>
+<a href="https://www.retroarch.com/">retroarch.com</a>
+<br><br>
+<hr>
+</div>
+</div>
+
+<br>
+<div class="goback" id="goback">
+<div class="links border-25">
+<a href="#" onclick="getOutOfLondon()"><h1><--- Go Back</h1></a>  
+</div>
+</div>
+
+
+<script>
+const warned = localStorage.getItem("warned");
+localStorage.getItem("warned");
+if (warned == 1) {
+console.log("user has already been warned. we will skip the popup");
+
+document.getElementById("cat").style.display = "block";
+document.getElementById("warn").style.display = "none";
+
+}
+else {
+    console.log("user has not been warned yet, showing warning");
+}
+
+</script>
+
+
+<script>
+const themeset = localStorage.getItem("themeset");
+localStorage.getItem("themeset");
+console.log(themeset);
+
+if (themeset == 1) {
+    enableanimations();
+    console.log("user has set the theme to 1, enabling animations")
+}
+if (themeset == 2) {
+    disableanimations();
+    console.log("user has set the theme to 2, fuck them animations lmao")
+}
+</script>
+
+<script>
+const porn = localStorage.getItem("porn");
+localStorage.getItem("porn");
+console.log("porn is set to " + porn);
+
+if (porn == 1) {
+    enableporn();
+    console.log("user has enabled porn. showing it.");
+}
+
+else {
+    disableporn();
+    console.log("user has disabled porn or is not enabled it yet. not showing it");
+}
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html class="animate-0" lang="en">
+
+<head>
+  <title>MAZANOKE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" type="text/css" href="./assets/css/fonts.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/variables.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#333333">
+</head>
+
+<body>
+  <div class="body-tint-bottom"></div>
+
+  <nav class="top-nav">
+    <div class="logo-container">
+      <img class="logo-image" src="./assets/images/symbol-192x192.png" alt="MAZANOKE logo">
+      <h1 class="h4">MAZANOKE</h1>
+    </div>
+
+    <div class="top-nav-actions">
+      <div class="theme-switch-container">
+        <label id="themeSwitch" class="switch switch--theme">
+          <input type="checkbox" onchange="toggleTheme()" id="themeSwitchThumb">
+          <span class="switch-thumb">
+            <span class="switch-icon switch-icon--light">
+              <svg height="16" stroke-linejoin="round" viewBox="0 0 16 16" width="16" style="color: currentcolor;"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.75 0.75V0H7.25V0.75V2V2.75H8.75V2V0.75ZM11.182 3.75732L11.7123 3.22699L12.0659 2.87344L12.5962 2.34311L13.6569 3.40377L13.1265 3.9341L12.773 4.28765L12.2426 4.81798L11.182 3.75732ZM8 10.5C9.38071 10.5 10.5 9.38071 10.5 8C10.5 6.61929 9.38071 5.5 8 5.5C6.61929 5.5 5.5 6.61929 5.5 8C5.5 9.38071 6.61929 10.5 8 10.5ZM8 12C10.2091 12 12 10.2091 12 8C12 5.79086 10.2091 4 8 4C5.79086 4 4 5.79086 4 8C4 10.2091 5.79086 12 8 12ZM13.25 7.25H14H15.25H16V8.75H15.25H14H13.25V7.25ZM0.75 7.25H0V8.75H0.75H2H2.75V7.25H2H0.75ZM2.87348 12.0659L2.34315 12.5962L3.40381 13.6569L3.93414 13.1265L4.28769 12.773L4.81802 12.2426L3.75736 11.182L3.22703 11.7123L2.87348 12.0659ZM3.75735 4.81798L3.22702 4.28765L2.87347 3.9341L2.34314 3.40377L3.4038 2.34311L3.93413 2.87344L4.28768 3.22699L4.81802 3.75732L3.75735 4.81798ZM12.0659 13.1265L12.5962 13.6569L13.6569 12.5962L13.1265 12.0659L12.773 11.7123L12.2426 11.182L11.182 12.2426L11.7123 12.773L12.0659 13.1265ZM8.75 13.25V14V15.25V16H7.25V15.25V14V13.25H8.75Z" fill="currentColor"></path></svg>
+            </span>
+            <span class="switch-icon switch-icon--dark">
+              <svg data-testid="geist-icon" height="16" stroke-linejoin="round" viewBox="0 0 16 16" width="16" style="color: currentcolor;"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 8.00005C1.5 5.53089 2.99198 3.40932 5.12349 2.48889C4.88136 3.19858 4.75 3.95936 4.75 4.7501C4.75 8.61609 7.88401 11.7501 11.75 11.7501C11.8995 11.7501 12.048 11.7454 12.1953 11.7361C11.0955 13.1164 9.40047 14.0001 7.5 14.0001C4.18629 14.0001 1.5 11.3138 1.5 8.00005ZM6.41706 0.577759C2.78784 1.1031 0 4.22536 0 8.00005C0 12.1422 3.35786 15.5001 7.5 15.5001C10.5798 15.5001 13.2244 13.6438 14.3792 10.9921L13.4588 9.9797C12.9218 10.155 12.3478 10.2501 11.75 10.2501C8.71243 10.2501 6.25 7.78767 6.25 4.7501C6.25 3.63431 6.58146 2.59823 7.15111 1.73217L6.41706 0.577759ZM13.25 1V1.75V2.75L14.25 2.75H15V4.25H14.25H13.25V5.25V6H11.75V5.25V4.25H10.75L10 4.25V2.75H10.75L11.75 2.75V1.75V1H13.25Z" fill="currentColor"></path></svg>          </span>
+            </span>
+        </label>
+      </div>
+    </div>
+  </nav>
+
+  <div class="content">
+
+    <div class="drop-zone" id="webWorkerDropZone">
+      <div class="drop-zone__border-dashed"></div>
+      <div class="drop-zone__cell-grid"></div>
+      <div class="drop-zone__vignette-outer"></div>
+      <div class="drop-zone__vignette-inner"></div>
+      <div class="drop-zone__shade"></div>
+      <div class="drop-zone__shade-top"></div>
+      <div class="drop-zone__sheen"></div>
+
+
+      <div class="drop-zone-content">
+        <div class="drop-zone-content__border-top-fade"></div>
+        <div class="drop-zone-content__border"></div>
+        
+        <div id="dropZoneActions" class="drop-zone-content__actions">
+          <div class="drop-zone-content__actions-text">Drop an image here to compress it</div>
+          <button class="button-cta button-secondary">
+            <svg height="16" stroke-linejoin="round" viewBox="0 0 16 16" width="16" style="color: currentcolor;"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.5 7.5V12.5C14.5 13.0523 14.0523 13.5 13.5 13.5H2.5C1.94772 13.5 1.5 13.0523 1.5 12.5V7.5H14.5ZM14.5 6V4H8.83333C8.29241 4 7.76607 3.82456 7.33333 3.5L6 2.5H1.5V6H14.5ZM0 1H1.5H6.16667C6.38304 1 6.59357 1.07018 6.76667 1.2L8.23333 2.3C8.40643 2.42982 8.61696 2.5 8.83333 2.5H14.5H16V4V12.5C16 13.8807 14.8807 15 13.5 15H2.5C1.11929 15 0 13.8807 0 12.5V2.5V1Z" fill="currentColor"></path></svg>
+            Browse
+          </button>
+        </div>
+
+        <div class="progress-container hidden" >
+          <div id="webWorkerProgressTrack">
+            <div id="webWorkerProgressBar"></div>
+          </div>
+          <div id="webWorkerProgressText" data-progress="0">
+          </div>
+
+          <div id="webWorkerAbort" class="mt-sm hidden">
+            <button class="button-cta button-secondary" onclick="abort()">Cancel</button>
+          </div>
+
+        </div>
+
+        <input id="webWorker" type="file" accept=".gif, .jpg, .jpeg, .png, .webp" />
+        
+      </div>
+    </div>
+
+    <nav class="nav-subpage">
+      <div class="segmented-control-group h6" id="selectSettingsSubpage">
+        <div class="segmented-control segmented-control--is-selected" onclick="selectSettingsSubpage('settings')">
+          <div class="segmented-control__selected-item">
+            <!-- Selected control indicator -->
+          </div>
+          <div class="segmented-control__text">
+            <svg height="20" width="20" stroke-linejoin="round" style="color:currentColor" viewBox="0 0 16 16" ><path fill-rule="evenodd" clip-rule="evenodd" d="M10.75 5.5C11.7165 5.5 12.5 4.7165 12.5 3.75C12.5 2.7835 11.7165 2 10.75 2C9.7835 2 9 2.7835 9 3.75C9 4.7165 9.7835 5.5 10.75 5.5ZM10.75 0.75C12.1479 0.75 13.3225 1.70608 13.6555 3H15.25H16V4.5H15.25H13.6555C13.3225 5.79392 12.1479 6.75 10.75 6.75C9.35212 6.75 8.17754 5.79392 7.84451 4.5H0.75H0V3H0.75H7.84451C8.17754 1.70608 9.35212 0.75 10.75 0.75ZM15.25 13H16V11.5H15.25L8.15549 11.5C7.82245 10.2061 6.64788 9.25 5.25 9.25C3.85212 9.25 2.67755 10.2061 2.34451 11.5H0.75H0V13H0.75H2.34451C2.67755 14.2939 3.85212 15.25 5.25 15.25C6.64788 15.25 7.82246 14.2939 8.15549 13L15.25 13ZM7 12.2513C7 12.2509 7 12.2504 7 12.25C7 12.2496 7 12.2491 7 12.2487C6.99929 11.2828 6.21606 10.5 5.25 10.5C4.2835 10.5 3.5 11.2835 3.5 12.25C3.5 13.2165 4.2835 14 5.25 14C6.21606 14 6.99929 13.2172 7 12.2513Z" fill="currentColor"></path></svg>
+            Settings
+          </div>
+          <input type="radio" name="settingsSubpage" value="settings" class="hidden" checked>
+        </div>
+        <div class="segmented-control" id="selectSubpageOutput" onclick="selectSettingsSubpage('output')" data-count="0">
+          <div class="segmented-control__text">
+            <svg height="20" width="20" stroke-linejoin="round" viewBox="0 0 16 16"  style="color: currentcolor;"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.5 2.5H1.5V9.18933L2.96966 7.71967L3.18933 7.5H3.49999H6.63001H6.93933L6.96966 7.46967L10.4697 3.96967L11.5303 3.96967L14.5 6.93934V2.5ZM8.00066 8.55999L9.53034 10.0897L10.0607 10.62L9.00001 11.6807L8.46968 11.1503L6.31935 9H3.81065L1.53032 11.2803L1.5 11.3106V12.5C1.5 13.0523 1.94772 13.5 2.5 13.5H13.5C14.0523 13.5 14.5 13.0523 14.5 12.5V9.06066L11 5.56066L8.03032 8.53033L8.00066 8.55999ZM4.05312e-06 10.8107V12.5C4.05312e-06 13.8807 1.11929 15 2.5 15H13.5C14.8807 15 16 13.8807 16 12.5V9.56066L16.5607 9L16.0303 8.46967L16 8.43934V2.5V1H14.5H1.5H4.05312e-06V2.5V10.6893L-0.0606689 10.75L4.05312e-06 10.8107Z" fill="currentColor"></path></svg>
+            <span>
+              Images
+              <span class="badge">
+                <span id="compressedImageCount" class="badge-text">
+                  0
+                </span>
+              </span>
+            </span>
+          </div>
+          <input type="radio" name="settingsSubpage" value="output" class="hidden">
+        </div>
+      </div>
+    </nav>
+
+    <section class="image-subpage-container">
+
+      <div class="image-subpage">
+        
+        <div class="image-options-container">
+
+          <div class="image-subpage-title-container">
+            <h2 class="h4">Settings</h2>
+            <div class="image-subpage-title-description">Images are compressed on your device to keep them private and secure.</div>
+          </div>
+
+          <div id="compressMethodGroup" class="form-group">
+            <div class="form-group__label-content">
+              <label class="form-group__label-text">
+                Compression method
+              </label>
+            </div>
+            <div class="form-group__input-content">
+
+              <div class="button-card-radio-group">
+                <div class="button-card-radio button-card-radio--is-selected" onclick="selectCompressMethod('initialQuality')">
+                  <div class="button-card-radio__content">
+                    <div class="flex gap-sm w-100">
+                      <label class="button-card-radio__label">Set image quality</label>
+                      <div class="button-card-radio__radio-input">
+                        <div class="button-card-radio__radio-icon"></div>
+                        <input class="hidden" type="radio" name="compressMethod" value="initialQuality" checked>
+                      </div>
+                    </div>
+                    <div class="button-card-radio__description">
+                      <div class="button-card-radio__description-text">
+                        Higher values retain more detail, while lower values result in smaller file sizes.
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="button-card-radio" onclick="selectCompressMethod('maxSizeMB')">
+                  <div class="button-card-radio__content">
+                    <div class="flex gap-sm w-100">
+                      <label class="button-card-radio__label">Limit file size</label>
+                      <div class="button-card-radio__radio-input">
+                        <div class="button-card-radio__radio-icon"></div>
+                        <input class="hidden" type="radio" name="compressMethod" value="maxSizeMB">
+                      </div>
+                    </div>
+                    <div class="button-card-radio__description">
+                      <div class="button-card-radio__description-text">
+                        Compress the image to a target file size.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="form-group hidden">
+            <div class="form-group__label-content">
+              <label class="form-group__label-text" for="maxSizeMB">
+                <!-- Target file size -->
+              </label>
+            </div>
+            <div class="form-group__input-content">
+              <div class="fade-in-up w-100">
+                <label class="mb-2xs">Max file size</label>
+                <!-- <input type="number" id="maxSizeMB" name="maxSizeMB" value="2" /> -->
+
+                <div class="form-field-container form-field-container--suffix">
+                  <input type="number" id="maxSizeMB" name="maxSizeMB" value="2" class="w-100" />
+                  <label for="maxSizeMB" class="form-field-suffix">
+                    MB
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="form-group hidden">
+            <div class="form-group__label-content">
+              <label class="form-group__label-text" for="initialQuality">
+                <!-- Quality -->
+              </label>
+            </div>
+            <div class="form-group__input-content">
+              <div class="fade-in-up w-100">
+                <label class="mb-2xs">Quality</label>
+                <div class="flex items-center gap-sm flex-wrap">
+                  <div class="form-field-container form-field-container--suffix">
+                    <input type="number" id="initialQuality" name="initialQuality" value="90" min="0" max="100" step="1" oninput="updateSlider(this.value, 'initialQualitySlider')" />
+                    <label for="initialQuality" class="form-field-suffix">
+                      %
+                    </label>
+                  </div>
+                  <div class="slider-track flex-1" id="initialQualitySlider" onmousedown="startSliderDrag(event, 'initialQuality')">
+                    <div class="slider-fill"></div>
+                    <div class="slider-thumb"></div>
+                  </div>
+                </div>
+
+
+
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group mt-lg">
+            <div class="form-group__label-content">
+              <label class="form-group__label-text" for="maxWidthOrHeight">
+                Dimensions
+              </label>
+              <div class="form-group__description">
+              </div>
+            </div>
+            <div class="form-group__input-content">
+
+              <div id="dimensionsMethodGroup" class="button-card-radio-group">
+                <div class="button-card-radio button-card-radio--is-selected" onclick="selectDimensionMethod('original')">
+                  <div class="button-card-radio__content">
+                    <div class="flex gap-sm w-100">
+                      <label class="button-card-radio__label">Keep original dimensions</label>
+                      <div class="button-card-radio__radio-input">
+                        <div class="button-card-radio__radio-icon"></div>
+                        <input class="hidden" type="radio" name="dimensionMethod" value="original" checked>
+                      </div>
+                    </div>
+                    <div class="button-card-radio__description">
+                      <div class="button-card-radio__description-text">
+                        Do not alter the width and height of the image.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="button-card-radio" onclick="selectDimensionMethod('limit')">
+                  <div class="button-card-radio__content">
+                    <div class="flex gap-sm w-100">
+                      <label class="button-card-radio__label">Limit dimensions</label>
+                      <div class="button-card-radio__radio-input">
+                        <div class="button-card-radio__radio-icon"></div>
+                        <input class="hidden" type="radio" name="dimensionMethod" value="limit">
+                      </div>
+                    </div>
+                    <div class="button-card-radio__description">
+                      <div class="button-card-radio__description-text">
+                        Limit the width and height of the image, applies to whichever is longer.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="form-group hidden" id="resizeDimensionsField">
+            <div class="form-group__label-content">
+              <label class="form-group__label-text" for="maxWidthOrHeight">
+                <!-- Max dimension -->
+              </label>
+            </div>
+            <div class="form-group__input-content">
+              <div class="fade-in-up w-100">
+                <label class="mb-2xs">Max dimension</label>
+                <div class="form-field-container form-field-container--suffix">
+                  <input type="number" id="maxWidthOrHeight" name="maxWidthOrHeight" value="1080" class="w-100" />
+                  <label for="maxWidthOrHeight" class="form-field-suffix">
+                    px
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div id="formatMethodGroup" class="form-group mt-lg">
+            <div class="form-group__label-content">
+              <label class="form-group__label-text">
+                Convert to
+              </label>
+            </div>
+            <div class="form-group__input-content">
+              <div class="button-card-radio-group">
+                <div class="button-card-radio button-card-radio--is-selected" onclick="selectFormat('nochange')">
+                  <div class="button-card-radio__content">
+                    <div class="flex gap-sm w-100">
+                      <label class="button-card-radio__label">No change</label>
+                      <div class="button-card-radio__radio-input">
+                        <div class="button-card-radio__radio-icon"></div>
+                        <input class="hidden" type="radio" name="formatSelect" value="nochange" checked>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="button-card-radio" onclick="selectFormat('image/jpeg')">
+                  <div class="button-card-radio__content">
+                    <div class="flex gap-sm w-100">
+                      <label class="button-card-radio__label">JPG</label>
+                      <div class="button-card-radio__radio-input">
+                        <div class="button-card-radio__radio-icon"></div>
+                        <input class="hidden" type="radio" name="formatSelect" value="image/jpeg">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="button-card-radio" onclick="selectFormat('image/png')">
+                  <div class="button-card-radio__content">
+                    <div class="flex gap-sm w-100">
+                      <label class="button-card-radio__label">PNG</label>
+                      <div class="button-card-radio__radio-input">
+                        <div class="button-card-radio__radio-icon"></div>
+                        <input class="hidden" type="radio" name="formatSelect" value="image/png">
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="button-card-radio" onclick="selectFormat('image/webp')">
+                  <div class="button-card-radio__content">
+                    <div class="flex gap-sm w-100">
+                      <label class="button-card-radio__label">WebP</label>
+                      <div class="button-card-radio__radio-input">
+                        <div class="button-card-radio__radio-icon"></div>
+                        <input class="hidden" type="radio" name="formatSelect" value="image/webp">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="outputDownloadContainer" class="image-output-container" data-count="0">
+
+          <div class="image-subpage-title-container">
+            <h2 class="h4">Compressed images</h2>
+          </div>
+
+          <div class="image-output__empty-state">
+            <div class="flex flex-col justify-center items-center gap-xs pt-3xl">
+              <svg height="44" width="44" stroke-linejoin="round" viewBox="0 0 16 16"  style="color: currentcolor;"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.5 2.5H1.5V9.18933L2.96966 7.71967L3.18933 7.5H3.49999H6.63001H6.93933L6.96966 7.46967L10.4697 3.96967L11.5303 3.96967L14.5 6.93934V2.5ZM8.00066 8.55999L9.53034 10.0897L10.0607 10.62L9.00001 11.6807L8.46968 11.1503L6.31935 9H3.81065L1.53032 11.2803L1.5 11.3106V12.5C1.5 13.0523 1.94772 13.5 2.5 13.5H13.5C14.0523 13.5 14.5 13.0523 14.5 12.5V9.06066L11 5.56066L8.03032 8.53033L8.00066 8.55999ZM4.05312e-06 10.8107V12.5C4.05312e-06 13.8807 1.11929 15 2.5 15H13.5C14.8807 15 16 13.8807 16 12.5V9.56066L16.5607 9L16.0303 8.46967L16 8.43934V2.5V1H14.5H1.5H4.05312e-06V2.5V10.6893L-0.0606689 10.75L4.05312e-06 10.8107Z" fill="currentColor"></path></svg>
+              <div>
+                <h3 class="h5">No images compressed yet</h3>
+                <p>Upload an image above to compress it. Compressed images will listed here.</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="outputDownloadContent" class="image-output-content"></div>
+        </div>
+
+      </div>
+    </section>
+
+
+  </div>
+
+  <footer>
+    <a class="footer-text" href="https://github.com/civilblur/mazanoke" target="_blank" rel="noopener noreferrer">created by civilblur</a>
+  </footer>
+
+  <button id="backToTop">
+    <svg height="16" stroke-linejoin="round" style="color:currentColor" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.70711 1.39644C8.31659 1.00592 7.68342 1.00592 7.2929 1.39644L2.21968 6.46966L1.68935 6.99999L2.75001 8.06065L3.28034 7.53032L7.25001 3.56065V14.25V15H8.75001V14.25V3.56065L12.7197 7.53032L13.25 8.06065L14.3107 6.99999L13.7803 6.46966L8.70711 1.39644Z" fill="currentColor"></path></svg>
+  </button>
+
+  <script type="text/javascript" src="./assets/js/browser-image-compression.js"></script>
+  <script type="text/javascript" src="./assets/js/script.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+          console.log('ServiceWorker scope: ', registration.scope);
+        }, function(err) {
+          console.log('ServiceWorker registration failed: ', err);
+        });
+      });
+    }
+  </script>
+</body>
+
+</html>

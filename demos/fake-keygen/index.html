@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Keygen</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+
+<script>
+    var num = 0;
+
+</script>
+
+<script>
+function generate() {
+var min = 1000000000000000;
+var max = 8000000000000000;
+var num = Math.floor(Math.random() * (max - min + 1)) + min;
+console.log(num);
+document.getElementById("key").innerHTML = num;
+
+}
+
+function exit() {
+    window.location.replace("http://demos.techcat.dev");
+}
+</script>
+
+<style>
+.keygen {
+    text-align: center;
+    margin: auto;
+    border: solid;
+    width: 95%;
+    font-family: "Press Start 2P";
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin: auto;
+
+}
+
+.numbers {
+    border: solid;
+    width: 50%;
+    margin: auto;
+    font-size: 10px;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 800px) {
+    .numbers {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+.keygen {
+padding-top: 20px;
+padding-bottom: 20px;
+}
+}
+</style>
+
+<body>
+
+<div class="keygen">
+<h3>Super Ultimate Software Keygen 1000</h3>
+<br>
+<div class="numbers">
+<p>Serial:</p>
+<h1 id="key">0000000000000000</h1>
+</div>
+<br>
+<button onclick="generate()">Generate Key</button>
+<button onclick="exit()">Exit</button>
+<br>
+<br>
+</div>
+
+</body>
+</html>

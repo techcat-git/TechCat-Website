@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pet the Braixen!</title>
+<meta name="viewport" content="width=240"/>
+</head>
+
+<style>
+
+
+body, html {
+overflow: hidden;
+margin: 0px;
+}
+
+.topscreen {
+width:240px;
+height:176px;
+overflow: hidden;
+font-family: "Arial";
+}
+ 
+.bottomscreen {
+width:240px;
+height:176px;
+overflow: hidden;
+font-family: "Arial";
+}
+
+.inner {
+text-align: center;
+font-size: 5px;
+border: solid;
+border-width: 2px;
+width: 236px;
+height: 172px;
+}
+
+body {
+}
+
+</style>
+
+
+<body>
+
+<div class="topscreen">
+<div class="inner">
+<h1>Pet the Braixen!</h1>
+<h1>Your score:</h1>
+<h1 id="score">0</h1>
+</div>
+</div>
+
+<div class="bottomscreen" id="bottom">
+<div class="inner">
+<img src="2.jpeg" width="200" height="170" onclick="addToScore()">
+</div>
+</div>
+
+<script>
+var x = 0;
+
+function addToScore() {
+x +=1;
+document.getElementById("score").innerHTML = x;
+}
+</script>
+
+</body>
+</html>

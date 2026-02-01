@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SlackOff</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo+One">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo+Black">
+</head>
+
+
+<style>
+    @keyframes animate {
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: #000000;
+    overflow: hidden;
+}
+.background li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 19s linear infinite;
+}
+
+
+
+
+.background li:nth-child(0) {
+    left: 45%;
+    width: 197px;
+    height: 197px;
+    bottom: -197px;
+    animation-delay: 1s;
+}
+.background li:nth-child(1) {
+    left: 51%;
+    width: 174px;
+    height: 174px;
+    bottom: -174px;
+    animation-delay: 4s;
+}
+.background li:nth-child(2) {
+    left: 83%;
+    width: 105px;
+    height: 105px;
+    bottom: -105px;
+    animation-delay: 5s;
+}
+.background li:nth-child(3) {
+    left: 71%;
+    width: 198px;
+    height: 198px;
+    bottom: -198px;
+    animation-delay: 9s;
+}
+.background li:nth-child(4) {
+    left: 19%;
+    width: 111px;
+    height: 111px;
+    bottom: -111px;
+    animation-delay: 11s;
+}
+.background li:nth-child(5) {
+    left: 60%;
+    width: 169px;
+    height: 169px;
+    bottom: -169px;
+    animation-delay: 11s;
+}
+.background li:nth-child(6) {
+    left: 39%;
+    width: 164px;
+    height: 164px;
+    bottom: -164px;
+    animation-delay: 25s;
+}
+.background li:nth-child(7) {
+    left: 34%;
+    width: 196px;
+    height: 196px;
+    bottom: -196px;
+    animation-delay: 4s;
+}
+.background li:nth-child(8) {
+    left: 52%;
+    width: 113px;
+    height: 113px;
+    bottom: -113px;
+    animation-delay: 22s;
+}
+.background li:nth-child(9) {
+    left: 25%;
+    width: 180px;
+    height: 180px;
+    bottom: -180px;
+    animation-delay: 44s;
+}
+
+
+
+.links {
+font-family: "Russo One";
+margin: auto;
+width: 80%;
+text-align: center;
+color: #ebebeb;
+padding: 10px;
+border-radius: 3px;
+box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.2);
+background: rgba(0,0,0,0.8);
+border:solid;
+border-width: 1px;
+position: relative;
+z-index: 0;
+overflow: hidden;
+overflow-wrap: break-word;
+}
+.border-25 { border-color: rgba(255, 255, 255, 0.25); }
+
+a {
+    color: #ebebeb;
+
+}
+
+img {
+    width:50%;
+    max-width:300px;
+}
+
+@media only screen and (max-width: 800px) {
+    .links {
+        width:90%;
+    }
+}
+</style>
+
+<body>
+
+<ul class="background">
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+</ul>
+
+<div class="links border-25">
+<h1>SlackOff</h1>
+<hr>
+<p>Downloadable Offline HTML/JS Games for Managed Chromebooks, Work Computers, Etc.</p>
+<p>Last updated: Dec 8th, 2025.</p>
+<hr>
+<p>These games are written in pure Javascript (or are programmed to work on an offline file), and cannot be blocked by your computer administrator!</p>
+<p>Just download the file, extract it, and run the .html file in your web browser.</p>
+<hr>
+<p>ROMs are NOT included for the emulators. You must find those yourself.</p>
+<hr>
+
+</div>
+<br><br>
+<div class="links border-25">
+<h3>Atari 2600 Emulator:</h3>
+<a href="https://site.techcat.dev/slackoff/a2600-offline-html.zip">Download - a2600-offline-html.zip</a>
+<br><br>
+<img src="screenshots/a2600-1.png">
+<img src="screenshots/a2600-2.png">
+<p>This emulator uses <a href="https://github.com/ppeccin/javatari.js">ppeccin's Javatari.js</a></p>
+<p>Last edited: Dec 8th, 2025.</p>
+</div>
+<br><br>
+<div class="links border-25">
+<h3>Eaglercraft:</h3>
+<a href="https://site.techcat.dev/slackoff/eaglercraft-offline-html.zip">Download - eaglercraft-offline-html.zip</a>
+<br><br>
+<img src="screenshots/eaglercraft-1.png">
+<img src="screenshots/eaglercraft-2.png">
+<p>Zip file includes 1.5.2, 1.8.8 1.12.2, Alpha 1.2.6, Beta 1.7.3, EaglyMC, along with their respected WASM versions.</p>
+<p>Created by Lax1Dude, PeytonPlayz585, EaglyMC Team, Etc.</p>
+<p>Last edited: Sept 7th 2025.</p>
+</div>
+<br><br>
+<div class="links border-25">
+<h3>Gameboy/Gameboy Color Emulator:</h3>
+<a href="https://site.techcat.dev/slackoff/gb-gbc-offline-html.zip">Download - gb-gbc-offline-html.zip</a>
+<br><br>
+<img src="screenshots/gb-gbc-1.png">
+<img src="screenshots/gb-gbc-2.png"> 
+
+<p>This emulator uses <a href="https://github.com/taisel/GameBoy-Online">taisel's GameBoy-Online</a></p>
+<p>Last edited: Dec 8th, 2025.</p>
+</div>
+<br><br>
+<div class="links border-25">
+<h3>Gameboy Advance Emulator:</h3>
+<a href="https://site.techcat.dev/slackoff/gba-offline-html.zip">Download - gba-offline-html.zip</a>
+<br><br>
+<img src="screenshots/gba-1.png">
+<img src="screenshots/gba-2.png">
+<p>This emulator uses <a href="https://github.com/taisel/IodineGBA">taisel's IodineGBA</a></p>
+<p>An open-source replacement BIOS is located in the emulators directory. This is required for games to boot.</p>
+<p>Last edited: Dec 8th, 2025.</p>
+</div>
+<br><br>
+<div class="links border-25">
+<h3>NES Emulator:</h3>
+<a href="https://site.techcat.dev/slackoff/nes-offline-html.zip">Download - nes-offline-html.zip</a>
+<br><br>
+<img src="screenshots/nes-11.png">
+<img src="screenshots/nes-22.png">
+<p>This emulator uses <a href="https://github.com/potatolain/nez">potatolain's nez</a></p>
+<p>Last edited: Dec 8th, 2025.</p>
+</div>
+<br><br>
+<div class="links border-25">
+<h3>Sega Master System Emulator:</h3>
+<a href="https://site.techcat.dev/slackoff/sms-offline-html.zip">Download - sms-offline-html.zip</a>
+<br><br>
+<img src="screenshots/sms-1.png">
+<img src="screenshots/sms-2.png">
+<p>This emulator uses <a href="https://github.com/friol/zenga">friol's zenga</a></p>
+<p>Last edited: Dec 8th, 2025.</p>
+</div>
+<br><br>
+<div class="links border-25">
+<h3>SNES Emulator:</h3>
+<a href="https://site.techcat.dev/slackoff/snes-offline-html.zip">Download - snes-offline-html.zip</a>
+<br><br>
+<img src="screenshots/snes-1.png">
+<img src="screenshots/snes-2.png">
+<p>This emulator uses <a href="https://github.com/angelo-wf/SnesJs">angelo-wf's SnesJs</a></p>
+<p>Emulator runs slowly on most hardware and does NOT emulate sound.</p>
+<p>Last edited: Dec 8th, 2025.</p>
+</div>
+
+</div>
+
+
+</body>

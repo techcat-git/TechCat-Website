@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo+One">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo+Black">
+
+<script>
+function switchCat() {
+document.getElementById("switched").style.display = "block";
+document.getElementById("unswitched").style.display = "none";
+
+let swoosh = new Audio('squeak.mp3');
+swoosh.play();
+gatoClick +=1
+console.log(gatoClick);
+if (gatoClick == 100) {
+let music = new Audio('music.mp3')
+music.play();
+}
+}
+
+function unswitchCat() {
+document.getElementById("unswitched").style.display = "block";
+document.getElementById("switched").style.display = "none";
+
+let swoosh = new Audio('squeak.mp3');
+swoosh.play();
+gatoClick +=1
+console.log(gatoClick);
+if (gatoClick == 100) {
+  let music = new Audio('music.mp3')
+  music.play();
+}
+}
+
+function spinningTheTitle() {
+document.getElementById("spinningTitle").style.display = "block";
+document.getElementById("title").style.display = "none";
+sleep(5000).then(() => { document.getElementById("title").style.display = "block"; });
+sleep(5000).then(() => { document.getElementById("spinningTitle").style.display = "none"; });
+sleep(5000).then(() => { console.log('spinned. Theres no easter egg to this. sowwy!') });
+
+}
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+</script>
+
+<script>
+var gatoClick = 0;  
+</script>
+
+<script>
+function shit() {
+alert("I'm a dog. AWOOOO!!!!");
+}
+</script>
+
+</head>
+
+<style>
+
+.switched {
+display: none;
+}
+
+.front {
+font-family: "Russo One";
+margin: auto;
+width: 80%;
+text-align: center;
+color: #f2f2f2;
+padding: 10px;
+border-radius: 10px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+a {
+color: #f2f2f2;
+}
+
+.hyprlinks {
+font-family: "Russo One";
+background-image: url('bg.png');
+font-size: 20px;
+overflow: hidden;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 999;
+width: 100%;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+background-color: #131313;
+}
+
+.hyprlinks-bottom {
+position: fixed;
+bottom:0%;
+width:100%; 
+font-family: "Russo One";
+background-image: url('bg.png');
+font-size: 20px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+background-color: #131313;
+}
+
+.hyprlinks-bottom-inner {
+color: #f2f2f2;
+text-align: center;
+}
+
+
+.hyprlinks-inner {
+overflow: hidden;
+font-size: 20px;
+padding: 10px;
+text-align: center;
+}
+
+
+body {
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+margin: 8px 0;
+background-image: url('div.png');
+background-color: #2f2f2f;
+}
+
+
+.front-inner {
+width: 50%;
+text-align: center;
+margin: auto;
+}
+
+.my-projects {
+font-family: "Russo One";
+margin: auto;
+width: 80%;
+text-align: center;
+color: #f2f2f2;
+padding: 10px;
+border-radius: 10px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+@media only screen and (max-width: 800px) {
+  .front {
+    width: 90%;
+  }
+}
+
+
+@media only screen and (max-width: 800px) {
+  .my-projects {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .hyprlinks-bottom-inner {
+  font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .hyprlinks-inner {
+   font-size: 15px;
+}
+}
+
+@media only screen and (max-width: 800px) {
+.cat {
+
+}
+}
+
+@media only screen and (max-width: 800px) {
+.front-inner {
+width: 100%;
+}
+}
+
+#spinningTitle {
+  
+  animation: spinning-title 5s;
+}
+
+@keyframes spinning-title {
+  50% {transform: rotate(180deg);}
+}
+
+.spinningTitle {
+  display: none;
+}
+
+.web {
+  width: 50%;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  .web {
+    width: 100%;
+  }
+}
+
+
+
+.oneone {
+    display: none;
+}
+.onetwo {
+    display: none;
+}
+.onethree {
+    display: none;
+}
+.onefour {
+    display: none;
+}
+.onefive {
+    display: none;
+}
+.onesix {
+    display: none;
+}
+.oneseven {
+    display: none;
+}
+.oneeight {
+    display: none;
+}
+.onenine {
+    display: none;
+}
+.onezero {
+    display: none;
+}
+
+/* second line */
+
+.twoone {
+    display: none;
+}
+.twotwo {
+    display: none;
+}
+.twothree {
+    display: none;
+}
+.twofour {
+    display: none;
+}
+.twofive {
+    display: none;
+}
+.twosix {
+    display: none;
+}
+.twoseven {
+    display: none;
+}
+.twoeight {
+    display: none;
+}
+.twonine {
+    display: none;
+}
+.twozero {
+    display: none;
+}
+
+/* third line */
+
+.threeone {
+    display: none;
+}
+.threetwo {
+    display: none;
+}
+.threethree {
+    display: none;
+}
+.threefour {
+    display: none;
+}
+.threefive {
+    display: none;
+}
+.threesix {
+    display: none;
+}
+.threeseven {
+    display: none;
+}
+.threeeight {
+    display: none;
+}
+.threenine {
+    display: none;
+}
+.threezero {
+    display: none;
+}
+
+
+.digits {
+display: flex;
+justify-content: center;
+align-items: center;    
+gap: 5px;               
+}
+
+
+
+
+
+
+
+
+</style>
+
+<html>
+<body>
+
+<div class="hyprlinks">
+<div class="hyprlinks-inner">
+<a href="projects/">[Web Projects]</a>
+<a href="more/">[More/Extras]</a>    
+<a href="#" onclick="shit()">[About Me]</a>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<div class="front">
+
+<div id="spinningTitle" class="spinningTitle">
+<h1>[Welcome to TechCat's Site!]</h1>
+</div>
+
+<div id="title" onclick="spinningTheTitle()">
+<h1>[Welcome to TechCat's Site!]</h1>
+</div>
+
+<div class="unswitched" id="unswitched">
+<picture>
+<source srcset="1.webp" type="image/webp" alt="Spinning Cat Image">
+<source srcset="1.gif" type="image/gif" alt="Spinning Cat Image"> 
+<img src="1.gif" class="cat1" onclick="switchCat()">
+</picture>
+<picture>
+<source srcset="2.webp" type="image/webp">
+<source srcset="2.gif" type="image/gif">
+<img src="2.gif" class="cat2" onclick="switchCat()">
+</picture>
+</div>
+
+
+<div class="switched" id="switched">
+<picture>
+<source srcset="3.webp" type="image/webp">
+<source srcset="3.gif" type="image/gif">
+<img src="3.gif" class="cat2" onclick="unswitchCat()">
+</picture>
+<picture>
+<source srcset="4.webp" type="image/webp" alt="Spinning Cat Image">
+<source srcset="4.gif" type="image/gif" alt="Spinning Cat Image"> 
+<img src="4.gif" class="cat1" onclick="unswitchCat()">
+</picture>
+</div>
+</div>
+
+<br>
+<br>
+
+<div class="my-projects">
+<h2>[Popular Web Projects]</h2>
+<br>
+<h2><a href="http://techcat.dev/outdoors-server">[Outdoors Server]</a></h2>
+<h2><a href="http://techcat.dev/nopay">[NoPay - Piracy Guides]</a></h2>
+<h2><a href="http://techcat.dev/oldnet">[OldNet Page]</a></h2>
+<h2><a href="http://techcat.dev/oldnet/basic-html">[Basic HTML Page]</a></h2>
+<h2><a href="http://techcat.dev/slackoff">[Slackoff - Offline HTML Games]</a></h2>
+<br>
+<h2><a href="projects/">[View More Projects Here]</a></h2>
+</div>  
+
+
+<br><br>
+
+<div class="my-projects">
+
+<h1>Day(s) since TechCat.Dev first opened:</h1>
+<br>
+<div class="digits">
+<img src="date/1.gif" id="oneone" class="oneone">
+<img src="date/2.gif" id="onetwo" class="onetwo">
+<img src="date/3.gif" id="onethree" class="onethree">
+<img src="date/4.gif" id="onefour" class="onefour">
+<img src="date/5.gif" id="onefive" class="onefive">
+<img src="date/6.gif" id="onesix" class="onesix">
+<img src="date/7.gif" id="oneseven" class="oneseven">
+<img src="date/8.gif" id="oneeight" class="oneeight">
+<img src="date/9.gif" id="onenine" class="onenine">
+<img src="date/0.gif" id="onezero" class="onezero">
+
+
+<img src="date/1.gif" id="twoone" class="twoone">
+<img src="date/2.gif" id="twotwo" class="twotwo">
+<img src="date/3.gif" id="twothree" class="twothree">
+<img src="date/4.gif" id="twofour" class="twofour">
+<img src="date/5.gif" id="twofive" class="twofive">
+<img src="date/6.gif" id="twosix" class="twosix">
+<img src="date/7.gif" id="twoseven" class="twoseven">
+<img src="date/8.gif" id="twoeight" class="twoeight">
+<img src="date/9.gif" id="twonine" class="twonine">
+<img src="date/0.gif" id="twozero" class="twozero">
+
+
+
+<img src="date/1.gif" id="threeone" class="threeone">
+<img src="date/2.gif" id="threetwo" class="threetwo">
+<img src="date/3.gif" id="threethree" class="threetwo">
+<img src="date/4.gif" id="threefour" class="threefour">
+<img src="date/5.gif" id="threefive" class="threefive">
+<img src="date/6.gif" id="threesix" class="threesix">
+<img src="date/7.gif" id="threeseven" class="threeseven">
+<img src="date/8.gif" id="threeeight" class="threeeight">
+<img src="date/9.gif" id="threenine" class="threenine">
+<img src="date/0.gif" id="threezero" class="threezero">
+</div>
+<br><br>
+</div>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="hyprlinks-bottom">
+<div class="hyprlinks-bottom-inner">
+<p>This site is powered by Fluffy Fox Technology.</p>
+</div>
+</div>
+</body>
+</html>
+
+
+<script>
+const date = new Date();
+
+var register = new Date("2024-04-11T00:00:00Z");
+var now = new Date();
+var complete = Math.floor((now - register) / 1000 / 60 / 60 / 24);
+console.log("clients current time: " + now);
+console.log("OK. it has been " + complete + " day(s) since techcat.dev has opened... now initializing catwomen!");
+
+const [firstdigit, seconddigit, thirddigit] = String(complete).split("");
+console.log("first catgirl will display: " + firstdigit);
+console.log("second catgirl will display: " + seconddigit);
+console.log("third catgirl will display: " + thirddigit)
+
+console.log("note: catwomen counter only supports 3 digit numbers. this needs to be fixed or else y2k will be real again.");
+
+
+////this code is garbage help
+
+
+////first segment
+if (firstdigit == 1) {
+    document.getElementById('oneone').style.display = "block";
+}
+if (firstdigit == 2) {
+    document.getElementById('onetwo').style.display = "block";
+}
+if (firstdigit == 3) {
+    document.getElementById('onethree').style.display = "block";
+}
+if (firstdigit == 4) {
+    document.getElementById('onefour').style.display = "block";
+}
+if (firstdigit == 5) {
+    document.getElementById('onefive').style.display = "block";
+}
+if (firstdigit == 6) {
+    document.getElementById('onesix').style.display = "block";
+}
+if (firstdigit == 7) {
+    document.getElementById('oneseven').style.display = "block";
+}
+if (firstdigit == 8) {
+    document.getElementById('oneeight').style.display = "block";
+}
+if (firstdigit == 9) {
+    document.getElementById('onenine').style.display = "block";
+}
+if (firstdigit == 0) {
+    document.getElementById('onezero').style.display = "block";
+}
+
+////second segment
+if (seconddigit == 1) {
+    document.getElementById('twoone').style.display = "block";
+}
+if (seconddigit == 2) {
+    document.getElementById('twotwo').style.display = "block";
+}
+if (seconddigit == 3) {
+    document.getElementById('twothree').style.display = "block";
+}
+if (seconddigit == 4) {
+    document.getElementById('twofour').style.display = "block";
+}
+if (seconddigit == 5) {
+    document.getElementById('twofive').style.display = "block";
+}
+if (seconddigit == 6) {
+    document.getElementById('twosix').style.display = "block";
+}
+if (seconddigit == 7) {
+    document.getElementById('twoseven').style.display = "block";
+}
+if (seconddigit == 8) {
+    document.getElementById('twoeight').style.display = "block";
+}
+if (seconddigit == 9) {
+    document.getElementById('twonine').style.display = "block";
+}
+if (seconddigit == 0) {
+    document.getElementById('twozero').style.display = "block";
+}
+
+////third segment
+
+if (thirddigit == 1) {
+    document.getElementById('threeone').style.display = "block";
+}
+if (thirddigit == 2) {
+    document.getElementById('threetwo').style.display = "block";
+}
+if (thirddigit == 3) {
+    document.getElementById('threethree').style.display = "block";
+}
+if (thirddigit == 4) {
+    document.getElementById('threefour').style.display = "block";
+}
+if (thirddigit == 5) {
+    document.getElementById('threefive').style.display = "block";
+}
+if (thirddigit == 6) {
+    document.getElementById('threesix').style.display = "block";
+}
+if (thirddigit == 7) {
+    document.getElementById('threeseven').style.display = "block";
+}
+if (thirddigit == 8) {
+    document.getElementById('threeeight').style.display = "block";
+}
+if (thirddigit == 9) {
+    document.getElementById('threenine').style.display = "block";
+}
+if (thirddigit == 0) {
+    document.getElementById('threezero').style.display = "block";
+}
+
+
+</script>
+
+

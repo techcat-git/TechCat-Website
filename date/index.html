@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<head>
+<title>Datetest</title>
+</head>
+
+<style>
+ /* first line */
+
+.oneone {
+    display: none;
+}
+.onetwo {
+    display: none;
+}
+.onethree {
+    display: none;
+}
+.onefour {
+    display: none;
+}
+.onefive {
+    display: none;
+}
+.onesix {
+    display: none;
+}
+.oneseven {
+    display: none;
+}
+.oneeight {
+    display: none;
+}
+.onenine {
+    display: none;
+}
+.onezero {
+    display: none;
+}
+
+/* second line */
+
+.twoone {
+    display: none;
+}
+.twotwo {
+    display: none;
+}
+.twothree {
+    display: none;
+}
+.twofour {
+    display: none;
+}
+.twofive {
+    display: none;
+}
+.twosix {
+    display: none;
+}
+.twoseven {
+    display: none;
+}
+.twoeight {
+    display: none;
+}
+.twonine {
+    display: none;
+}
+.twozero {
+    display: none;
+}
+
+/* third line */
+
+.threeone {
+    display: none;
+}
+.threetwo {
+    display: none;
+}
+.threethree {
+    display: none;
+}
+.threefour {
+    display: none;
+}
+.threefive {
+    display: none;
+}
+.threesix {
+    display: none;
+}
+.threeseven {
+    display: none;
+}
+.threeeight {
+    display: none;
+}
+.threenine {
+    display: none;
+}
+.threezero {
+    display: none;
+}
+
+.digits {
+display: flex; 
+align-items: center;
+gap: 5px;
+}
+
+body {
+    font-family: 'Arial';
+}
+
+</style>
+
+
+
+<body>
+
+<h1>TechCat.Dev was registered:</h1>
+<br>
+<div class="digits">
+<img src="1.gif" id="oneone" class="oneone">
+<img src="2.gif" id="onetwo" class="onetwo">
+<img src="3.gif" id="onethree" class="onethree">
+<img src="4.gif" id="onefour" class="onefour">
+<img src="5.gif" id="onefive" class="onefive">
+<img src="6.gif" id="onesix" class="onesix">
+<img src="7.gif" id="oneseven" class="oneseven">
+<img src="8.gif" id="oneeight" class="oneeight">
+<img src="9.gif" id="onenine" class="onenine">
+<img src="0.gif" id="onezero" class="onezero">
+
+
+<img src="1.gif" id="twoone" class="twoone">
+<img src="2.gif" id="twotwo" class="twotwo">
+<img src="3.gif" id="twothree" class="twothree">
+<img src="4.gif" id="twofour" class="twofour">
+<img src="5.gif" id="twofive" class="twofive">
+<img src="6.gif" id="twosix" class="twosix">
+<img src="7.gif" id="twoseven" class="twoseven">
+<img src="8.gif" id="twoeight" class="twoeight">
+<img src="9.gif" id="twonine" class="twonine">
+<img src="0.gif" id="twozero" class="twozero">
+
+
+
+<img src="1.gif" id="threeone" class="threeone">
+<img src="2.gif" id="threetwo" class="threetwo">
+<img src="3.gif" id="threethree" class="threetwo">
+<img src="4.gif" id="threefour" class="threefour">
+<img src="5.gif" id="threefive" class="threefive">
+<img src="6.gif" id="threesix" class="threesix">
+<img src="7.gif" id="threeseven" class="threeseven">
+<img src="8.gif" id="threeeight" class="threeeight">
+<img src="9.gif" id="threenine" class="threenine">
+<img src="0.gif" id="threezero" class="threezero">
+
+</div>
+
+<br>
+<br>
+
+<h1>Days ago!</h1>
+
+
+
+</body>
+
+
+<script>
+const date = new Date();
+
+var register = new Date("2024-04-11T00:00:00Z");
+var now = new Date();
+var complete = Math.floor((now - register) / 1000 / 60 / 60 / 24);
+
+
+const [firstdigit, seconddigit, thirddigit] = String(complete).split("");
+console.log(firstdigit)
+console.log(seconddigit)
+console.log(thirddigit)
+
+
+////this code is garbage help
+
+
+////first segment
+if (firstdigit == 1) {
+    document.getElementById('oneone').style.display = "block";
+}
+if (firstdigit == 2) {
+    document.getElementById('onetwo').style.display = "block";
+}
+if (firstdigit == 3) {
+    document.getElementById('onethree').style.display = "block";
+}
+if (firstdigit == 4) {
+    document.getElementById('onefour').style.display = "block";
+}
+if (firstdigit == 5) {
+    document.getElementById('onefive').style.display = "block";
+}
+if (firstdigit == 6) {
+    document.getElementById('onesix').style.display = "block";
+}
+if (firstdigit == 7) {
+    document.getElementById('oneseven').style.display = "block";
+}
+if (firstdigit == 8) {
+    document.getElementById('oneeight').style.display = "block";
+}
+if (firstdigit == 9) {
+    document.getElementById('onenine').style.display = "block";
+}
+if (firstdigit == 0) {
+    document.getElementById('onezero').style.display = "block";
+}
+
+////second segment
+if (seconddigit == 1) {
+    document.getElementById('twoone').style.display = "block";
+}
+if (seconddigit == 2) {
+    document.getElementById('twotwo').style.display = "block";
+}
+if (seconddigit == 3) {
+    document.getElementById('twothree').style.display = "block";
+}
+if (seconddigit == 4) {
+    document.getElementById('twofour').style.display = "block";
+}
+if (seconddigit == 5) {
+    document.getElementById('twofive').style.display = "block";
+}
+if (seconddigit == 6) {
+    document.getElementById('twosix').style.display = "block";
+}
+if (seconddigit == 7) {
+    document.getElementById('twoseven').style.display = "block";
+}
+if (seconddigit == 8) {
+    document.getElementById('twoeight').style.display = "block";
+}
+if (seconddigit == 9) {
+    document.getElementById('twonine').style.display = "block";
+}
+if (seconddigit == 0) {
+    document.getElementById('twozero').style.display = "block";
+}
+
+////third segment
+
+if (thirddigit == 1) {
+    document.getElementById('threeone').style.display = "block";
+}
+if (thirddigit == 2) {
+    document.getElementById('threetwo').style.display = "block";
+}
+if (thirddigit == 3) {
+    document.getElementById('threethree').style.display = "block";
+}
+if (thirddigit == 4) {
+    document.getElementById('threefour').style.display = "block";
+}
+if (thirddigit == 5) {
+    document.getElementById('threefive').style.display = "block";
+}
+if (thirddigit == 6) {
+    document.getElementById('threesix').style.display = "block";
+}
+if (thirddigit == 7) {
+    document.getElementById('threeseven').style.display = "block";
+}
+if (thirddigit == 8) {
+    document.getElementById('threeeight').style.display = "block";
+}
+if (thirddigit == 9) {
+    document.getElementById('threenine').style.display = "block";
+}
+if (thirddigit == 0) {
+    document.getElementById('threezero').style.display = "block";
+}
+
+
+</script>
+
+
+

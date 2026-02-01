@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script src="script.js"></script>
+<title>The thing!!</title>
+</head>
+
+<style>
+.main {
+margin: auto;
+text-align: center;
+width: 50%;
+font-family: "Arial";
+}
+
+img {
+max-width: 50%;
+max-height: 50%;
+}
+
+@media only screen and (max-width: 800px) {
+.main {
+width: 100%;
+}
+}
+</style>
+
+</head>
+<body>
+
+
+<div class="main">
+
+<h1>Image Viewer</h1>
+
+<img src="1.png" id="image">
+
+<br>
+<br>
+
+<button onclick="image1()">Image 1</button>
+<button onclick="image2()">Image 2</button>
+<button onclick="image3()">Image 3</button>
+<button onclick="image4()">Image 4</button>
+
+<br>
+<br>
+
+<form onsubmit="input(event)">
+<input type="text" id="inputcontent" name="inputcontent" placeholder="Input (1-4)"></label>
+<input type="submit" value="Submit">
+</form>
+
+</div>
+
+</body>
+</html>
